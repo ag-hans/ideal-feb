@@ -1,4 +1,6 @@
-.github
+# SvelteKit build output
+build/
+.svelte-kit/
 
 # Logs
 logs
