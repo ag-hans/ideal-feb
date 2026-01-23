@@ -2,7 +2,7 @@
 	import { base } from '$app/paths'
 	import { onMount } from 'svelte'
 
-	let isValentinesDay
+	let isValentinesDay = false
 
 	onMount(() => {
 		// Check if today is February 14th
@@ -18,18 +18,20 @@
 <div class="page-container">
 	<div class="thank-you-card">
 		<div class="hearts-container">
-			<span class="floating-heart" style="--delay: 0s">💖</span>
-			<span class="floating-heart" style="--delay: 0.5s">💕</span>
-			<span class="floating-heart" style="--delay: 1s">💗</span>
+			<span class="floating-heart" style="--delay: 0s">🩵</span>
+			<span class="floating-heart" style="--delay: 0.5s">🤍</span>
+			<span class="floating-heart" style="--delay: 1s">🩵</span>
 		</div>
 
 		<h1>Thank You!</h1>
 		<p class="message">You just made me the happiest person in the world! 🥰</p>
-		<p class="sub-message">I can't wait to spend Valentine's Day with you.</p>
+		<p class="sub-message">I can't wait to spend Valentine's Day with you 🩵</p>
 
 		<div class="action-group">
 			<a href="{base}/" class="btn btn-primary">← Back</a>
-			<a href="{base}/letter/" class="btn btn-primary">Read My Letter →</a>
+			{#if isValentinesDay}
+				<a href="{base}/letter/" class="btn btn-primary">Read My Letter →</a>
+			{/if}
 		</div>
 	</div>
 </div>
@@ -40,7 +42,7 @@
 		padding: 2.5rem 2rem;
 		border-radius: var(--border-radius);
 		box-shadow: var(--shadow);
-		max-width: 450px;
+		max-width: 600px;
 		width: 100%;
 		position: relative;
 		overflow: hidden;
@@ -76,7 +78,7 @@
 	}
 
 	.sub-message {
-		color: var(--color-text);
+		color: var(--color-primary-dark);
 		opacity: 0.8;
 	}
 

@@ -19,7 +19,7 @@
 	<div class="question-card">
 		<span class="heart">💕</span>
 		<h1>Will You Be My Valentine?</h1>
-		<p>I have something special to ask you...</p>
+		<p>It would mean the world if you say yes 🥹</p>
 
 		<div class="button-group">
 			<a href="{base}/thank-you/" class="btn btn-primary">Yes 🩵</a>
@@ -42,7 +42,7 @@
 		padding: 2.5rem 2rem;
 		border-radius: var(--border-radius);
 		box-shadow: var(--shadow);
-		max-width: 400px;
+		max-width: 450px;
 		width: 100%;
 	}
 

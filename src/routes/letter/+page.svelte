@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths'
+	import { base, resolve } from '$app/paths'
 </script>
 
 <svelte:head>
@@ -14,8 +14,7 @@
 		</header>
 
 		<section class="letter-content">
-			<!-- TODO: Replace with your actual letter content -->
-			<p class="greeting">My Dearest,</p>
+			<p class="greeting">My Dearest, Georgette</p>
 
 			<p class="letter-body">
 				<!-- Your letter content goes here -->
@@ -30,7 +29,7 @@
 
 			<p class="closing">
 				Forever yours,<br />
-				<span class="signature">— Your Name</span>
+				<span class="signature">— Adriel</span>
 			</p>
 		</section>
 
@@ -59,7 +58,7 @@
 		</section>
 
 		<footer class="letter-footer">
-			<a href="{base}/" class="btn btn-primary">← Back to Start</a>
+			<a href={resolve('/')} class="btn btn-primary">← Back to Start</a>
 		</footer>
 	</article>
 </div>
