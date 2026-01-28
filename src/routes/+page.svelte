@@ -18,7 +18,7 @@
 <div class="page-container">
 	<div class="question-card">
 		<span class="heart">💕</span>
-		<h1>Will You Be My Valentine?</h1>
+		<h1>Georgette, my love, will You Be My Valentine?</h1>
 		<p>It would mean the world if you say yes 🥹</p>
 
 		<div class="button-group">
