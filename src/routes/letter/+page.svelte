@@ -1,5 +1,9 @@
 <script lang="ts">
-	import { base, resolve } from '$app/paths'
+	import { resolve } from '$app/paths'
+	import memory_1 from '$lib/assets/memory_1.jpg'
+	import memory_2 from '$lib/assets/memory_2.jpg'
+	import memory_3 from '$lib/assets/memory_3.jpg'
+	import memory_4 from '$lib/assets/memory_4.jpg'
 </script>
 
 <svelte:head>
@@ -14,22 +18,28 @@
 		</header>
 
 		<section class="letter-content">
-			<p class="greeting">My Dearest, Georgette</p>
+			<p class="greeting">My love, my future wife, Georgette</p>
 
 			<p class="letter-body">
-				<!-- Your letter content goes here -->
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is where your
-				heartfelt message will go...
+				I have never realize that I am capable of loving and taking care of
+				another human being. I cannot stand being away from you for too long and
+				I would do anything to be able to see your beautiful face every morning.
+				I love you and it is timeless, I love you that I will remove ego and
+				pride and change for you. I love you more than the difficult times ahead
+				of us.
 			</p>
 
 			<p class="letter-body">
-				<!-- Add more paragraphs as needed -->
-				Continue your message here...
+				I cannot imagine anyone in my life other than you. You're all that I ask
+				and I wanted to last for a lifetime. Give me the chance to show you that
+				I will be better and best version of myself for you. Love is built and 
+				love is found. With you I found a love that sees me, chooses me, and stays.
+				I will forever be yours and the one that will be waiting at you in the altar 💍 
 			</p>
 
 			<p class="closing">
 				Forever yours,<br />
-				<span class="signature">— Adriel</span>
+				<span class="signature">— Adriel, Future Husband</span>
 			</p>
 		</section>
 
@@ -39,20 +49,16 @@
 			<div class="gallery-grid">
 				<!-- TODO: Replace with actual photos -->
 				<div class="photo-placeholder">
-					<span>Photo 1</span>
-					<!-- <img src="{base}/images/photo1.jpg" alt="Memory 1" /> -->
+					<img src={memory_1} alt="Memory 1" />
 				</div>
 				<div class="photo-placeholder">
-					<span>Photo 2</span>
-					<!-- <img src="{base}/images/photo2.jpg" alt="Memory 2" /> -->
+					<img src={memory_2} alt="Memory 2" />
 				</div>
 				<div class="photo-placeholder">
-					<span>Photo 3</span>
-					<!-- <img src="{base}/images/photo3.jpg" alt="Memory 3" /> -->
+					<img src={memory_3} alt="Memory 3" />
 				</div>
 				<div class="photo-placeholder">
-					<span>Photo 4</span>
-					<!-- <img src="{base}/images/photo4.jpg" alt="Memory 4" /> -->
+					<img src={memory_4} alt="Memory 4" />
 				</div>
 			</div>
 		</section>

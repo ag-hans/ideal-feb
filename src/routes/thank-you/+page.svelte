@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths'
+	import { resolve } from '$app/paths'
 	import { onMount } from 'svelte'
 
 	let isValentinesDay = false
@@ -28,10 +28,10 @@
 		<p class="sub-message">I can't wait to spend Valentine's Day with you 🩵</p>
 
 		<div class="action-group">
-			<a href="{base}/" class="btn btn-primary">← Back</a>
-			{#if isValentinesDay}
-				<a href="{base}/letter/" class="btn btn-primary">Read My Letter →</a>
-			{/if}
+			<a href={resolve('/')} class="btn btn-primary">← Back</a>
+				<a href={resolve('/letter')} class="btn btn-primary"
+					>🩵 Georgette's Letter 🤍</a
+				>
 		</div>
 	</div>
 </div>

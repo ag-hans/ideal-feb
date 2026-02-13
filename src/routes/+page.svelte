@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { base } from '$app/paths'
+	import { resolve } from '$app/paths'
 	import { onMount } from 'svelte'
 
 	let isValentinesDay = $state(false)
@@ -22,17 +22,15 @@
 		<p>It would mean the world if you say yes 🥹</p>
 
 		<div class="button-group">
-			<a href="{base}/thank-you/" class="btn btn-primary">Yes 🩵</a>
-			<a href="{base}/thank-you/" class="btn btn-primary">Yes only 🤍</a>
+			<a href={resolve('/thank-you/')} class="btn btn-primary">Yes 🩵</a>
+			<a href={resolve('/thank-you/')} class="btn btn-primary">Yes only 🤍</a>
 		</div>
 
-		{#if isValentinesDay}
 			<div class="secret-section">
-				<a href="{base}/letter/" class="btn btn-secret">
-					✨ Special Surprise ✨
+				<a href={resolve('/letter')} class="btn btn-secret">
+					🩵 Georgette's Letter 🤍
 				</a>
 			</div>
-		{/if}
 	</div>
 </div>
 
